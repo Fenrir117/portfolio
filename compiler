@@ -1,0 +1,5 @@
+yarn run v1.17.3
+$ ./node_modules/@symfony/webpack-encore/bin/encore.js dev =
+Running webpack ...
+
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.

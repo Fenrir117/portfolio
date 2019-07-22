@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {{ encore_entry_link_tags('post') }}
+
+    </head>
+    <body>
+        <p>ID :
+            {{ id }}</p>
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.text }}</p>
+        <p>
+            <a href="{{ path('blog_index') }}">Retour</a>
+        </p>
+        <p>{{ post.date | date('H:i:s') }}</p>
+        <p>{{ post.price | price }}</p>
+        <p></p>
+        <p>Env :
+            {{ app.environment }}
+        </p>
+        {# <p>User : {{ app.user }} </p> #}
+        <p>Request :
+            {{ app.request }}
+        </p>
+        <p>Session is Started :
+            {{ app.session.isStarted }}
+        </p>
+        <p>Debug :
+            {{ app.debug }}
+        </p>
+
+        {{ encore_entry_script_tags('postjs')}}
+    </body>
+</html>
